@@ -1,0 +1,17 @@
+
+<%- include("partials/header"); -%>
+    <h1>TWITTER</h1>
+
+
+  <%  tweets.forEach(function(tweet){ %>
+
+    <h1><%=tweet.user%></h1>
+    <p>
+    <%=tweet.msg%>
+    </p>
+    <button>LikeButton</button>
+    <%= tweet.likes %>
+    <button>RtButton</button>
+    <%= tweet.retweets %>
+    <% }) %>
+<%- include("partials/footer"); -%>
